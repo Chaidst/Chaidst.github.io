@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Education | CS Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#f8d9f6",
+              "on-secondary-fixed-variant": "#5b5b5e",
+              "primary": "#5e5e5e",
+              "on-tertiary": "#fff7fa",
+              "error": "#9e3f4e",
+              "secondary-dim": "#535356",
+              "on-background": "#2d3338",
+              "surface-bright": "#f9f9fb",
+              "on-tertiary-fixed-variant": "#6c546c",
+              "on-primary-fixed-variant": "#5b5b5b",
+              "primary-fixed": "#e2e2e2",
+              "tertiary-container": "#f8d9f6",
+              "surface-container-low": "#f2f4f6",
+              "on-secondary": "#faf8fc",
+              "on-error-container": "#782232",
+              "inverse-primary": "#ffffff",
+              "on-surface-variant": "#596065",
+              "background": "#f9f9fb",
+              "tertiary-dim": "#634c63",
+              "surface-dim": "#d3dbe2",
+              "inverse-surface": "#0c0e10",
+              "on-secondary-container": "#525154",
+              "on-error": "#fff7f7",
+              "surface-tint": "#5e5e5e",
+              "surface-container-high": "#e4e9ee",
+              "on-primary-container": "#525252",
+              "primary-container": "#e2e2e2",
+              "secondary-fixed": "#e4e2e5",
+              "surface-variant": "#dde3e9",
+              "on-primary": "#f8f8f8",
+              "error-container": "#ff8b9a",
+              "surface": "#f9f9fb",
+              "surface-container": "#ebeef2",
+              "on-primary-fixed": "#3f3f3f",
+              "inverse-on-surface": "#9c9d9f",
+              "tertiary-fixed-dim": "#eacbe7",
+              "tertiary": "#6f576f",
+              "secondary": "#5f5f62",
+              "primary-fixed-dim": "#d4d4d4",
+              "secondary-fixed-dim": "#d6d4d7",
+              "error-dim": "#4f0116",
+              "outline": "#757c81",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#614a61",
+              "on-secondary-fixed": "#3f3f42",
+              "outline-variant": "#acb3b8",
+              "surface-container-highest": "#dde3e9",
+              "on-surface": "#2d3338",
+              "secondary-container": "#e4e2e5",
+              "primary-dim": "#525252",
+              "on-tertiary-fixed": "#4e384e"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .tonal-transition {
+        background: linear-gradient(180deg, rgba(249, 249, 251, 0) 0%, rgba(242, 244, 246, 1) 100%);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none">
+<nav class="flex justify-between items-center max-w-6xl mx-auto px-8 py-4">
+<div class="text-lg font-bold tracking-tighter text-zinc-900 dark:text-zinc-100">CS Portfolio</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors font-['Inter'] font-medium text-sm tracking-tight hover:scale-105 transition-transform duration-200" href="index.html">Home</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors font-['Inter'] font-medium text-sm tracking-tight hover:scale-105 transition-transform duration-200" href="projects.html">Projects</a>
+<a class="text-zinc-900 dark:text-white font-semibold border-b-2 border-zinc-900 dark:border-white pb-1 font-['Inter'] text-sm tracking-tight hover:scale-105 transition-transform duration-200" href="education.html">Education</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors font-['Inter'] font-medium text-sm tracking-tight hover:scale-105 transition-transform duration-200" href="about.html">About</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors font-['Inter'] font-medium text-sm tracking-tight hover:scale-105 transition-transform duration-200" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-zinc-900 dark:text-zinc-100 hover:scale-105 transition-transform duration-200">dark_mode</button>
+<button class="material-symbols-outlined text-zinc-900 dark:text-zinc-100 hover:scale-105 transition-transform duration-200">terminal</button>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-24 px-8 max-w-6xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-24">
+<div class="flex flex-col md:flex-row items-baseline gap-4 mb-8">
+<span class="font-label text-xs uppercase tracking-widest text-primary font-semibold">Academic Path</span>
+<div class="h-[1px] flex-grow bg-outline-variant/15"></div>
+</div>
+<h1 class="text-[3.5rem] leading-[1.1] font-bold tracking-tight text-on-surface mb-6 max-w-3xl">
+                The Architecture of <br/><span class="text-outline">Thought &amp; Computation.</span>
+</h1>
+<p class="text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+                A curated journey through fundamental principles and advanced explorations in computer science, focusing on efficiency, scalability, and the human-machine interface.
+            </p>
+</section>
+<!-- Course Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Data Structures: Large Feature -->
+<div class="md:col-span-8 group">
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-on-surface/5 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-5">
+<span class="material-symbols-outlined text-9xl">account_tree</span>
+</div>
+<div class="relative z-10">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-4 block">Core Foundation</span>
+<h2 class="text-3xl font-bold tracking-tight mb-4">Data Structures</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8 max-w-lg">
+                            Mastered the art of organizing information for maximum efficiency. Focused on complexity analysis, memory management, and the implementation of abstract data types from scratch.
+                        </p>
+<div class="bg-surface-container-low p-6 rounded-lg">
+<h3 class="text-sm font-bold uppercase tracking-widest mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">rocket_launch</span>
+                                Highlighted Project
+                            </h3>
+<p class="text-sm text-on-surface-variant mb-2 font-medium">Self-Balancing Red-Black Tree Visualizer</p>
+<p class="text-xs text-on-surface-variant/80">Developed an interactive tool to demonstrate node rotations and re-coloring during insertions, ensuring O(log n) search time.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Algorithms: Vertical Sidebar -->
+<div class="md:col-span-4 h-full">
+<div class="bg-primary text-on-primary p-10 rounded-xl h-full flex flex-col justify-between hover:scale-[1.01] transition-transform duration-300">
+<div>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary-fixed-dim mb-4 block">Logic &amp; Flow</span>
+<h2 class="text-3xl font-bold tracking-tight mb-4">Algorithms</h2>
+<p class="text-on-primary/80 leading-relaxed mb-8">
+                            Recursive strategies, dynamic programming, and greedy approaches. Solved 100+ competitive programming challenges.
+                        </p>
+</div>
+<div class="border-t border-on-primary/10 pt-6">
+<p class="text-xs font-bold uppercase tracking-widest mb-1">Capstone</p>
+<p class="text-sm font-medium">Dijkstra's Pathfinding for Urban Logistics</p>
+</div>
+</div>
+</div>
+<!-- Machine Learning: Aesthetic Mid-size -->
+<div class="md:col-span-6">
+<div class="bg-surface-container-low p-10 rounded-xl hover:bg-surface-container-lowest transition-colors duration-300">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-tertiary mb-4 block">Artificial Intelligence</span>
+<h2 class="text-2xl font-bold tracking-tight mb-3">Machine Learning</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">
+                        Deep dive into neural networks, statistical inference, and regression models using PyTorch. Explored the ethical implications of algorithmic bias.
+                    </p>
+<div class="bg-white/50 backdrop-blur-sm p-5 rounded-lg border border-outline-variant/10">
+<p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-1">Key Insight</p>
+<p class="text-sm italic">"Model complexity is a liability without robust data validation."</p>
+</div>
+</div>
+</div>
+<!-- Operating Systems: Wide Bottom -->
+<div class="md:col-span-6">
+<div class="bg-surface-container-high p-10 rounded-xl relative group cursor-default">
+<div class="flex justify-between items-start mb-6">
+<div>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-4 block">System Architecture</span>
+<h2 class="text-2xl font-bold tracking-tight">Operating Systems</h2>
+</div>
+<span class="material-symbols-outlined text-primary/20 group-hover:text-primary transition-colors">memory</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        Concurrency, process scheduling, and file system design. Building a foundational understanding of how software speaks to hardware.
+                    </p>
+<div class="flex gap-3 flex-wrap">
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-bold uppercase tracking-tighter rounded-full">Multithreading</span>
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-bold uppercase tracking-tighter rounded-full">Kernel Design</span>
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-bold uppercase tracking-tighter rounded-full">POSIX</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Additional Certifications / Education Info -->
+<section class="mt-32 grid md:grid-cols-2 gap-16">
+<div>
+<h3 class="text-xl font-bold mb-6">Academic Background</h3>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="text-outline-variant font-bold text-sm pt-1">2021—2025</div>
+<div>
+<p class="font-bold text-on-surface">B.Sc. in Computer Science</p>
+<p class="text-sm text-on-surface-variant">University of Technology</p>
+<p class="text-xs text-on-surface-variant/70 mt-1 italic">GPA: 3.9/4.0</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="text-outline-variant font-bold text-sm pt-1">2023</div>
+<div>
+<p class="font-bold text-on-surface">Cybersecurity Certification</p>
+<p class="text-sm text-on-surface-variant">Global Security Institute</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant/5">
+<h3 class="text-sm font-bold uppercase tracking-widest mb-6">Technical Stack</h3>
+<div class="grid grid-cols-2 gap-y-4">
+<div>
+<p class="text-[10px] text-primary font-bold uppercase tracking-widest mb-1">Languages</p>
+<p class="text-sm text-on-surface-variant">C++, Python, Java, Rust</p>
+</div>
+<div>
+<p class="text-[10px] text-primary font-bold uppercase tracking-widest mb-1">DevOps</p>
+<p class="text-sm text-on-surface-variant">Docker, Kubernetes, Git</p>
+</div>
+<div>
+<p class="text-[10px] text-primary font-bold uppercase tracking-widest mb-1">Web</p>
+<p class="text-sm text-on-surface-variant">React, Node.js, Tailwind</p>
+</div>
+<div>
+<p class="text-[10px] text-primary font-bold uppercase tracking-widest mb-1">Database</p>
+<p class="text-sm text-on-surface-variant">PostgreSQL, Redis, Neo4j</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-zinc-200/20 dark:border-zinc-800/20 bg-zinc-50 dark:bg-zinc-950">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto px-8 gap-4">
+<div class="font-['Inter'] text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-600">
+                © 2024 CS Student. Built with precision.
+            </div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">GitHub</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">LinkedIn</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">Twitter</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-600 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#">Email</a>
+</div>
+</div>
+</footer>
+</body></html>
