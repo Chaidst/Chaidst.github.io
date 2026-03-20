@@ -1,264 +1,223 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "surface": "#f9f9fb",
-                        "background": "#f9f9fb",
-                        "on-secondary-fixed-variant": "#5b5b5e",
-                        "surface-container-lowest": "#ffffff",
-                        "secondary-fixed-dim": "#d6d4d7",
-                        "inverse-on-surface": "#9c9d9f",
-                        "on-error-container": "#782232",
-                        "tertiary-fixed-dim": "#eacbe7",
-                        "on-surface-variant": "#596065",
-                        "inverse-primary": "#ffffff",
-                        "on-secondary-container": "#525154",
-                        "secondary-container": "#e4e2e5",
-                        "on-primary": "#f8f8f8",
-                        "secondary": "#5f5f62",
-                        "tertiary": "#6f576f",
-                        "outline-variant": "#acb3b8",
-                        "surface-variant": "#dde3e9",
-                        "on-primary-fixed-variant": "#5b5b5b",
-                        "surface-bright": "#f9f9fb",
-                        "surface-container-high": "#e4e9ee",
-                        "on-surface": "#2d3338",
-                        "tertiary-dim": "#634c63",
-                        "on-secondary-fixed": "#3f3f42",
-                        "on-error": "#fff7f7",
-                        "surface-dim": "#d3dbe2",
-                        "primary": "#5e5e5e",
-                        "primary-fixed": "#e2e2e2",
-                        "inverse-surface": "#0c0e10",
-                        "surface-container-highest": "#dde3e9",
-                        "on-secondary": "#faf8fc",
-                        "tertiary-container": "#f8d9f6",
-                        "on-tertiary-container": "#614a61",
-                        "error-dim": "#4f0116",
-                        "primary-dim": "#525252",
-                        "on-primary-container": "#525252",
-                        "error": "#9e3f4e",
-                        "surface-tint": "#5e5e5e",
-                        "on-tertiary": "#fff7fa",
-                        "primary-container": "#e2e2e2",
-                        "surface-container": "#ebeef2",
-                        "on-background": "#2d3338",
-                        "tertiary-fixed": "#f8d9f6",
-                        "outline": "#757c81",
-                        "on-tertiary-fixed-variant": "#6c546c",
-                        "error-container": "#ff8b9a",
-                        "primary-fixed-dim": "#d4d4d4",
-                        "secondary-fixed": "#e4e2e5",
-                        "on-primary-fixed": "#3f3f3f",
-                        "surface-container-low": "#f2f4f6",
-                        "secondary-dim": "#535356",
-                        "on-tertiary-fixed": "#4e384e"
-                    },
-                    fontFamily: {
-                        "headline": ["Inter"],
-                        "body": ["Inter"],
-                        "label": ["Inter"]
-                    },
-                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
-                },
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#f8d9f6",
+              "primary": "#5e5e5e",
+              "error-dim": "#4f0116",
+              "outline-variant": "#acb3b8",
+              "tertiary-dim": "#634c63",
+              "on-primary": "#f8f8f8",
+              "error": "#9e3f4e",
+              "secondary-fixed-dim": "#d6d4d7",
+              "on-secondary": "#faf8fc",
+              "on-tertiary-fixed": "#4e384e",
+              "surface-container": "#ebeef2",
+              "surface-container-high": "#e4e9ee",
+              "on-error-container": "#782232",
+              "on-tertiary-container": "#614a61",
+              "error-container": "#ff8b9a",
+              "secondary-fixed": "#e4e2e5",
+              "on-background": "#2d3338",
+              "on-primary-fixed": "#3f3f3f",
+              "inverse-primary": "#ffffff",
+              "primary-container": "#e2e2e2",
+              "on-secondary-fixed": "#3f3f42",
+              "surface-dim": "#d3dbe2",
+              "on-surface-variant": "#596065",
+              "surface-container-highest": "#dde3e9",
+              "secondary": "#5f5f62",
+              "surface": "#f9f9fb",
+              "on-secondary-container": "#525154",
+              "background": "#f9f9fb",
+              "tertiary-fixed": "#f8d9f6",
+              "secondary-dim": "#535356",
+              "on-tertiary-fixed-variant": "#6c546c",
+              "on-secondary-fixed-variant": "#5b5b5e",
+              "inverse-on-surface": "#9c9d9f",
+              "tertiary-fixed-dim": "#eacbe7",
+              "surface-bright": "#f9f9fb",
+              "surface-container-low": "#f2f4f6",
+              "on-tertiary": "#fff7fa",
+              "surface-tint": "#5e5e5e",
+              "on-primary-container": "#525252",
+              "primary-fixed": "#e2e2e2",
+              "inverse-surface": "#0c0e10",
+              "primary-fixed-dim": "#d4d4d4",
+              "primary-dim": "#525252",
+              "on-primary-fixed-variant": "#5b5b5b",
+              "outline": "#757c81",
+              "on-error": "#fff7f7",
+              "tertiary": "#6f576f",
+              "secondary-container": "#e4e2e5",
+              "surface-variant": "#dde3e9",
+              "on-surface": "#2d3338",
+              "surface-container-lowest": "#ffffff"
             },
-        }
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
     </script>
-    <style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body { font-family: 'Inter', sans-serif; }
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
-
-        .tonal-transition {
-            transition: background-color 0.3s ease;
-        }
-
-        .glassmorphic {
+        .glass-nav {
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
         }
     </style>
 </head>
-
-<body class="bg-surface font-body text-on-surface antialiased">
-    <!-- Top Navigation Bar -->
-    <nav
-        class="fixed top-0 w-full z-50 bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none tonal-transition">
-        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-            <div class="text-xl font-bold tracking-tighter text-zinc-900 dark:text-white font-headline">ELYSIA</div>
-            <div class="hidden md:flex items-center space-x-8">
-                <a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300 font-inter tracking-tight text-sm font-medium"
-                    href="#">Home</a>
-                <a class="text-zinc-900 dark:text-white font-semibold border-b border-zinc-900/10 dark:border-white/10 font-inter tracking-tight text-sm font-medium"
-                    href="#">Projects</a>
-                <a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300 font-inter tracking-tight text-sm font-medium"
-                    href="#">About</a>
-                <a class="text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300 font-inter tracking-tight text-sm font-medium"
-                    href="#">Contact</a>
-            </div>
-            <button
-                class="bg-primary text-on-primary px-6 py-2.5 rounded-lg text-sm font-medium scale-102 active:scale-98 transition-transform hover:opacity-90">
-                Get in touch
+<body class="bg-surface text-on-surface min-h-screen selection:bg-tertiary-container selection:text-on-tertiary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9fb]/70 dark:bg-[#121212]/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(45,51,56,0.04)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<a class="text-xl font-bold tracking-tighter text-[#2d3338] dark:text-[#f9f9fb]" href="index.html">CS Portfolio</a>
+<div class="hidden md:flex items-center space-x-8 font-['Inter'] tracking-tight font-medium text-sm">
+<a class="text-[#757c81] dark:text-[#acb3b8] hover:text-[#2d3338] transition-colors" href="index.html">Home</a>
+<a class="text-[#2d3338] dark:text-[#ffffff] border-b-2 border-[#5e5e5e] pb-1" href="projects.html">Projects</a><a class="text-[#757c81] dark:text-[#acb3b8] hover:text-[#2d3338] transition-colors" href="education.html">Education</a>
+<a class="text-[#757c81] dark:text-[#acb3b8] hover:text-[#2d3338] transition-colors" href="about.html">About</a>
+<a class="text-[#757c81] dark:text-[#acb3b8] hover:text-[#2d3338] transition-colors" href="contact.html">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-medium text-sm hover:scale-[1.02] transition-transform duration-200 active:opacity-80">
+                Resume
             </button>
-        </div>
-    </nav>
-    <main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
-        <!-- Hero Header -->
-        <header class="mb-20">
-            <div
-                class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-[0.7rem] font-bold tracking-[0.1em] uppercase mb-6">
-                Selected Works
-            </div>
-            <h1 class="text-[3.5rem] font-extrabold tracking-tighter leading-tight mb-6 max-w-3xl">
-                A collection of digital artifacts and ethereal experiences.
-            </h1>
-            <p class="text-on-surface-variant text-lg max-w-xl leading-relaxed">
-                Focused on the intersection of minimalist aesthetics and functional precision. Every pixel is
-                intentional, every interaction is curated.
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="pt-40 pb-20 px-8 max-w-7xl mx-auto">
+<div class="max-w-3xl">
+<span class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-outline mb-4 block">Selected Works</span>
+<h1 class="text-[3.5rem] font-extrabold tracking-tighter leading-tight mb-6 text-on-surface">
+                Engineering tools and <span class="text-primary">winning solutions.</span>
+</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body max-w-2xl">
+                A curation of hackathon victories, utility extensions, and strategic competitions that define my technical journey.
             </p>
-        </header>
-        <!-- Project Grid (Asymmetric Bento-inspired Layout) -->
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
-            <!-- Project Card 1: Large Featured -->
-            <div class="md:col-span-8 group cursor-pointer">
-                <div class="relative overflow-hidden rounded-xl bg-surface-container-low aspect-[16/10] mb-6">
-                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        data-alt="Minimalist architectural space with soft lighting"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwsYcrNFcqw8-P0O78k4SxxYSLqOeJw6duFcrrubNrm_5MM6PeqRg4hBG0w-tyNjRl4ylMxh0NzdpI12FVKTeg6qqhQsYqu-jqGS2jRTDY9yE1F52tG-ED-H6PIMmkBNwGW_cYRz_lignm1xPjvLan6FU9SKsWe7JeJaP90Yxl9MdZ_tmyk9uXTV71-n_NvwYnB8Pj74tkSnCQQNADHTX7r8fLodlsJohvD7AR7zIApSzICsr7UUZ59nfxwxJTAteRX6eEzSEjlkg" />
-                    <div
-                        class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    </div>
-                </div>
-                <div class="flex justify-between items-start px-1">
-                    <div>
-                        <h3 class="text-2xl font-bold tracking-tight mb-1">Ethereal Interface</h3>
-                        <p class="text-on-surface-variant font-medium opacity-60">UI/UX Design • 2024</p>
-                    </div>
-                    <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform"
-                        data-icon="arrow_outward">arrow_outward</span>
-                </div>
+</div>
+</header>
+<!-- Projects Bento Grid -->
+<main class="px-8 pb-32 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- FlashFilter (Hackathon Winning) - LARGE FEATURE -->
+<div class="md:col-span-8 group cursor-pointer">
+<div class="bg-surface-container-low rounded-xl overflow-hidden transition-transform duration-500 hover:scale-[1.01]">
+<div class="aspect-[16/9] w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Abstract vibrant geometric UI interface design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtpYtlqOyVwUCeB-jeFFXI_w-TRJYR9hWMKoxjwZx8eXUKlWKDuuubvQIFJXH7hau3hu-oEuETcTcGOl3okfOVlndH9PLe_p1PmptAsVZhtmP-iCXJl1zzyNEzqjovwkbrPLKpuEvIwJOTvakZ2FmnJKeTlA8HoMsLNNHBa30bm7qPRhotOyNQo8MVpvu3PGCZjyeFNFui9KLAMKv09FgArcunFUKw57vFb6xP27OTVEu5_JIKHlpHB2ZaUnszIles6Lloommo6Mo"/>
+</div>
+<div class="p-8 md:p-12">
+<div class="flex items-center gap-3 mb-4">
+<span class="bg-tertiary-container text-on-tertiary-container text-[0.7rem] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Winner</span>
+<span class="text-outline text-xs uppercase tracking-widest font-semibold">Hackathon</span>
+</div>
+<h3 class="text-3xl font-bold tracking-tight mb-4 text-on-surface">FlashFilter</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg max-w-2xl">
+                            A high-performance real-time data filtering engine designed for massive datasets. Built during a 48-hour intensive sprint, securing first place for its architectural efficiency.
+                        </p>
+</div>
+</div>
+</div>
+<!-- YouTube Utility Extension - VERTICAL MEDIUM -->
+<div class="md:col-span-4 group cursor-pointer">
+<div class="h-full bg-surface-container-low rounded-xl overflow-hidden transition-transform duration-500 hover:scale-[1.01] flex flex-col">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalistic chrome browser extension interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_5ZxiN6zhWAUaBCm0JvJN4EN1lfECgoJY7N9j9SMk-0AxBvd1ood2RToAp6bzVhLOQ5yoxmaAfTjzIqQDQEsOviXPTvep7RQUxZP1D51MP0fm6Oo6_rjuslvUt9X4yeE9WcXvrGVXnZOzulY0SUxEj5Ygsd5mjTzxxzx0nGIKKFHiE_H_8xFdra74xs2RsgT8wBapdbHML17Q0Bmg4zCOIjAMBMZmWzytLFIY7wTo-bomrrRZ6-gIOj35Pz8xoK5DO9Gty2-UpoA"/>
+</div>
+<div class="p-8 flex-grow">
+<span class="text-outline text-xs uppercase tracking-widest font-semibold mb-3 block">Chrome Extension</span>
+<h3 class="text-2xl font-bold tracking-tight mb-3 text-on-surface">YouTube Utility</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">
+                            Productivity-focused extension to adjust video speeds with granular control and dynamic subtitle positioning.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Faces (Hackathon Winning) - HORIZONTAL MEDIUM -->
+<div class="md:col-span-6 group cursor-pointer">
+<div class="bg-surface-container-low rounded-xl overflow-hidden transition-transform duration-500 hover:scale-[1.01]">
+<div class="aspect-video bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Futuristic facial recognition scanning visualization" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeFeL6Ai8Xrh-8A6WR9Lov9ucOcHTjPQeg7T8ufR16nUuwXwJ5Yuv5KP0nCinulzaKYYf0QsuqCa95__Do55jKo5Dmoe1ErPa9FZkw5jE9W4A9sdbamspJm6HKU-hz4C4vrWpjOO9n4vHMFvpuz7XxXGTXwR5NLxaqnrYQiMHLYV2CFgPdIsOJMGpr6lGQc096WiFMEc8tgqp0gUGd-bWX1N3F69ORtcycXNrV9CB-wHYPWW0qUl5emghrt6tbETQBZF-bXAOAiJ8"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-3 mb-3">
+<span class="bg-tertiary-container text-on-tertiary-container text-[0.7rem] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Winner</span>
+<span class="text-outline text-xs uppercase tracking-widest font-semibold">AI/ML</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight mb-3 text-on-surface">Faces</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">
+                            Identity verification system utilizing lightweight neural networks for edge computing environments.
+                        </p>
+</div>
+</div>
+</div>
+<!-- McKinsey Case Competition - HORIZONTAL MEDIUM -->
+<div class="md:col-span-6 group cursor-pointer">
+<div class="bg-surface-container-low rounded-xl overflow-hidden transition-transform duration-500 hover:scale-[1.01]">
+<div class="aspect-video bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sophisticated data analysis charts and documents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1tWmHHNcJPNlI8a_liJ5KLIfLIktquv-t0m7a4tGm6BJeDMEhnW4nDKabNk9I4REudAqPzYnUAcbsALPCetpumjM7lBrPYhm736XmNoPXUT_sKp1bIKg0__MeBqNzGdZrIpJFhvr90hVoMTYQEa1cvN2d8PkXSPeMQf2UoxEeC0vFXwjO8wjTz-HQQlV3kja7Py5k8NDaFKzZpTfHTrQxNlrGHJxRw0bChwZHl93KReczT4zQ2jZX2j9VJIpFv2Qv92vBIQz5PHc"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-3 mb-3">
+<span class="bg-tertiary-container text-on-tertiary-container text-[0.7rem] font-bold px-3 py-1 rounded-full uppercase tracking-wider">1st Place</span>
+<span class="text-outline text-xs uppercase tracking-widest font-semibold">Strategy</span>
+</div>
+<h3 class="text-2xl font-bold tracking-tight mb-3 text-on-surface">McKinsey Case Competition</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">
+                            Developed a market-entry strategy for a renewable energy conglomerate, focusing on sustainable unit economics.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f9f9fb] dark:bg-[#0a0a0a] w-full border-t border-[#acb3b8]/15">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto">
+<div class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-[#5e5e5e] dark:text-[#acb3b8] mb-6 md:mb-0">
+                © 2024 Editorial Minimalist. All rights reserved.
             </div>
-            <!-- Project Card 2: Vertical Small -->
-            <div class="md:col-span-4 group cursor-pointer md:mt-12">
-                <div class="relative overflow-hidden rounded-xl bg-surface-container-low aspect-[4/5] mb-6">
-                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        data-alt="Clean abstract topographic lines on grey"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrLMgcB8ZSceLghPjEMKAWMnBYzJ06TVlyvkIsqGkrzSN9T2iMG0lQWrSkyqXxKQBUySTHceV96mYx_juPr4v9Z6jzsJvRdEX3jeNAyex2PG84pbVRQ5CWGXF4Y2sSN63MmlRA4s-UnLiSDEYcxfM0AsZ_lTm7ipVG7eMINRzYsrSxb0vnsrnjE3F2_Qo1hOGhbm6v6dET7yVBcpdXAfNPkKTljuIiW2uhKYe5-Ds4jPlzR0HRuepz-9jhAev8fNiH9GHCwG4IKF4" />
-                </div>
-                <div class="flex flex-col px-1">
-                    <p class="text-[0.7rem] font-bold tracking-widest uppercase text-on-surface-variant mb-2">Branding
-                    </p>
-                    <h3 class="text-xl font-bold tracking-tight">Ocular Identity</h3>
-                </div>
-            </div>
-            <!-- Project Card 3: Horizontal -->
-            <div class="md:col-span-5 group cursor-pointer">
-                <div class="relative overflow-hidden rounded-xl bg-surface-container-low aspect-square mb-6">
-                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        data-alt="Modern geometric glass sculpture on desk"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTXGEkxZkvaoaJy0ROZYwWE-vq7XiRpmJwsDhi99yWri7nn-BM-PNH3pQBm8o38ot5-kh9mzta3k00mRpaWaq7TmO2bBqBmVs0H9tx7KeByMb-fHeAQoM97Pd4t17ckWSrmEOTFtfkdWnNFvXFLayNzptfYPz0rMo0qNDvYwNPlbqc4rzWnhgrpav_MCNdkzfI_6AeTaHDX0o2JQ-Id2QF26YgQ1aNYeo2AuWvIDlM_7JVi3EHZZjxzMzsD0v66a8NAHWKLvnTsSc" />
-                </div>
-                <div class="flex flex-col px-1">
-                    <p class="text-[0.7rem] font-bold tracking-widest uppercase text-on-surface-variant mb-2">Art
-                        Direction</p>
-                    <h3 class="text-xl font-bold tracking-tight">Kinetic Motion</h3>
-                </div>
-            </div>
-            <!-- Project Card 4: Wide -->
-            <div class="md:col-span-7 group cursor-pointer">
-                <div class="relative overflow-hidden rounded-xl bg-surface-container-low aspect-[16/9] mb-6">
-                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        data-alt="High-end editorial layout design preview"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuANl5BIZC_9DVydWdyhRJE8fvfaiZ4FSs8pIgpPg_OKI-qs7vuRotoJ0btrW4jhWYv3BmojN8TcmyV63QDL65EckzgWqjvspMYk1v4rLgvdTRNUkdxufW8WICVoDzaWiUVDPHgxC94fku36CKZzxiMaDvpxCWaaKbX5hSgIM8wYDAsiQ1xi4hwXk5nR60VyL2qrwthkNaQhDrKUiL2VAFqB9z-kHFlig5lT1rJlHVF-Hgv-zx6JmSR446dSMaZsQ69b2YydcAvLjoc" />
-                </div>
-                <div class="flex justify-between items-end px-1">
-                    <div>
-                        <h3 class="text-2xl font-bold tracking-tight mb-1">Zenith Journal</h3>
-                        <p class="text-on-surface-variant font-medium opacity-60">Editorial Design</p>
-                    </div>
-                    <div
-                        class="bg-surface-container-highest/50 backdrop-blur-md px-4 py-2 rounded-full text-xs font-semibold tracking-tight">
-                        Featured Work
-                    </div>
-                </div>
-            </div>
-            <!-- Project Card 5: Full Width Textural Moment -->
-            <div class="md:col-span-12 group cursor-pointer py-12">
-                <div
-                    class="grid md:grid-cols-2 gap-12 items-center bg-surface-container-lowest rounded-[2rem] p-12 shadow-[0_8px_40px_rgba(0,0,0,0.02)] transition-transform duration-500 hover:scale-[1.01]">
-                    <div class="order-2 md:order-1">
-                        <div
-                            class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-[0.65rem] font-bold tracking-widest uppercase mb-6">
-                            Case Study</div>
-                        <h2 class="text-4xl font-extrabold tracking-tighter mb-6">Designing for the Next Decade</h2>
-                        <p class="text-on-surface-variant text-lg leading-relaxed mb-8">An in-depth exploration of
-                            tactile interfaces in a digital-first world.</p>
-                        <button class="flex items-center gap-2 font-bold tracking-tight group/btn">
-                            Read the process
-                            <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1"
-                                data-icon="east">east</span>
-                        </button>
-                    </div>
-                    <div
-                        class="order-1 md:order-2 relative overflow-hidden rounded-2xl aspect-video bg-surface-container-low">
-                        <img class="w-full h-full object-cover" data-alt="Abstract smooth metallic liquid surface"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBlEdoovjkDBfd74i93bWigcf8pT_rcG-5G8uhXCkETdmKfCn2OxMzXfOrHg5mwdntAoXRtfBpOjX8sVOest4ygNdpgXWv2jpAm0rBvExTrGqG4I_j8CHN6s20wtXC1vutSY3xSn4a3T7u7KzflCDHsqP-W-9mD5VauY1P7in4rUNpWlwc7Qcyu2rWBOvvBfdFpCijC1lkup0leLbyat3PCCSebU-ojmW2jeq9kVliK_jCVrN9frPk71S-CaXu865GMcHRWyhsUnQ" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- Footer -->
-    <footer class="bg-zinc-50 dark:bg-zinc-950 w-full py-12 border-t border-zinc-100/10 tonal-shift">
-        <div
-            class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto space-y-6 md:space-y-0">
-            <div class="font-inter text-xs tracking-widest uppercase text-zinc-600 dark:text-zinc-400">
-                © 2024 ELYSIA. Designed for the ethereal.
-            </div>
-            <div class="flex space-x-8">
-                <a class="font-inter text-xs tracking-widest uppercase text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-opacity opacity-80 hover:opacity-100"
-                    href="#">Twitter</a>
-                <a class="font-inter text-xs tracking-widest uppercase text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-opacity opacity-80 hover:opacity-100"
-                    href="#">LinkedIn</a>
-                <a class="font-inter text-xs tracking-widest uppercase text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-opacity opacity-80 hover:opacity-100"
-                    href="#">Dribbble</a>
-            </div>
-        </div>
-    </footer>
-    <!-- Floating Action Navigation Pill (Signature Element) -->
-    <div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
-        <div
-            class="glassmorphic bg-white/70 dark:bg-zinc-900/70 rounded-full px-6 py-3 flex items-center space-x-6 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/20">
-            <a class="text-zinc-900 dark:text-white flex items-center justify-center p-2 rounded-full bg-zinc-100 dark:bg-zinc-800 transition-transform active:scale-90"
-                href="#">
-                <span class="material-symbols-outlined" data-icon="grid_view"
-                    style="font-variation-settings: 'FILL' 1;">grid_view</span>
-            </a>
-            <a class="text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors p-2" href="#">
-                <span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
-            </a>
-            <a class="text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors p-2" href="#">
-                <span class="material-symbols-outlined" data-icon="mail">mail</span>
-            </a>
-        </div>
-    </div>
-</body>
-
-</html>
+<div class="flex space-x-8 font-['Inter'] text-[0.75rem] uppercase tracking-widest">
+<a class="text-[#757c81] dark:text-[#525252] hover:text-[#5e5e5e] transition-colors" href="#">GitHub</a>
+<a class="text-[#757c81] dark:text-[#525252] hover:text-[#5e5e5e] transition-colors" href="#">LinkedIn</a>
+<a class="text-[#757c81] dark:text-[#525252] hover:text-[#5e5e5e] transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<!-- Bottom Mobile Nav Shell -->
+<div class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
+<div class="glass-nav bg-white/70 rounded-full px-6 py-4 flex items-center gap-8 shadow-xl border border-white/20">
+<a class="flex flex-col items-center gap-1" href="index.html">
+<span class="material-symbols-outlined text-outline">home</span>
+</a>
+<a class="flex flex-col items-center gap-1" href="projects.html">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+</a><a class="flex flex-col items-center gap-1" href="education.html">
+<span class="material-symbols-outlined text-outline">school</span>
+</a>
+<a class="flex flex-col items-center gap-1" href="about.html">
+<span class="material-symbols-outlined text-outline">person</span>
+</a>
+<a class="flex flex-col items-center gap-1" href="contact.html">
+<span class="material-symbols-outlined text-outline">mail</span>
+</a>
+</div>
+</div>
+</body></html>
