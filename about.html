@@ -1,281 +1,268 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "surface": "#f9f9fb",
-                        "background": "#f9f9fb",
-                        "on-secondary-fixed-variant": "#5b5b5e",
-                        "surface-container-lowest": "#ffffff",
-                        "secondary-fixed-dim": "#d6d4d7",
-                        "inverse-on-surface": "#9c9d9f",
-                        "on-error-container": "#782232",
-                        "tertiary-fixed-dim": "#eacbe7",
-                        "on-surface-variant": "#596065",
-                        "inverse-primary": "#ffffff",
-                        "on-secondary-container": "#525154",
-                        "secondary-container": "#e4e2e5",
-                        "on-primary": "#f8f8f8",
-                        "secondary": "#5f5f62",
-                        "tertiary": "#6f576f",
-                        "outline-variant": "#acb3b8",
-                        "surface-variant": "#dde3e9",
-                        "on-primary-fixed-variant": "#5b5b5b",
-                        "surface-bright": "#f9f9fb",
-                        "surface-container-high": "#e4e9ee",
-                        "on-surface": "#2d3338",
-                        "tertiary-dim": "#634c63",
-                        "on-secondary-fixed": "#3f3f42",
-                        "on-error": "#fff7f7",
-                        "surface-dim": "#d3dbe2",
-                        "primary": "#5e5e5e",
-                        "primary-fixed": "#e2e2e2",
-                        "inverse-surface": "#0c0e10",
-                        "surface-container-highest": "#dde3e9",
-                        "on-secondary": "#faf8fc",
-                        "tertiary-container": "#f8d9f6",
-                        "on-tertiary-container": "#614a61",
-                        "error-dim": "#4f0116",
-                        "primary-dim": "#525252",
-                        "on-primary-container": "#525252",
-                        "error": "#9e3f4e",
-                        "surface-tint": "#5e5e5e",
-                        "on-tertiary": "#fff7fa",
-                        "primary-container": "#e2e2e2",
-                        "surface-container": "#ebeef2",
-                        "on-background": "#2d3338",
-                        "tertiary-fixed": "#f8d9f6",
-                        "outline": "#757c81",
-                        "on-tertiary-fixed-variant": "#6c546c",
-                        "error-container": "#ff8b9a",
-                        "primary-fixed-dim": "#d4d4d4",
-                        "secondary-fixed": "#e4e2e5",
-                        "on-primary-fixed": "#3f3f3f",
-                        "surface-container-low": "#f2f4f6",
-                        "secondary-dim": "#535356",
-                        "on-tertiary-fixed": "#4e384e"
-                    },
-                    fontFamily: {
-                        "headline": ["Inter"],
-                        "body": ["Inter"],
-                        "label": ["Inter"]
-                    },
-                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
-                },
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | Chaitanya - CS Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#f8d9f6",
+              "primary": "#5e5e5e",
+              "error-dim": "#4f0116",
+              "outline-variant": "#acb3b8",
+              "tertiary-dim": "#634c63",
+              "on-primary": "#f8f8f8",
+              "error": "#9e3f4e",
+              "secondary-fixed-dim": "#d6d4d7",
+              "on-secondary": "#faf8fc",
+              "on-tertiary-fixed": "#4e384e",
+              "surface-container": "#ebeef2",
+              "surface-container-high": "#e4e9ee",
+              "on-error-container": "#782232",
+              "on-tertiary-container": "#614a61",
+              "error-container": "#ff8b9a",
+              "secondary-fixed": "#e4e2e5",
+              "on-background": "#2d3338",
+              "on-primary-fixed": "#3f3f3f",
+              "inverse-primary": "#ffffff",
+              "primary-container": "#e2e2e2",
+              "on-secondary-fixed": "#3f3f42",
+              "surface-dim": "#d3dbe2",
+              "on-surface-variant": "#596065",
+              "surface-container-highest": "#dde3e9",
+              "secondary": "#5f5f62",
+              "surface": "#f9f9fb",
+              "on-secondary-container": "#525154",
+              "background": "#f9f9fb",
+              "tertiary-fixed": "#f8d9f6",
+              "secondary-dim": "#535356",
+              "on-tertiary-fixed-variant": "#6c546c",
+              "on-secondary-fixed-variant": "#5b5b5e",
+              "inverse-on-surface": "#9c9d9f",
+              "tertiary-fixed-dim": "#eacbe7",
+              "surface-bright": "#f9f9fb",
+              "surface-container-low": "#f2f4f6",
+              "on-tertiary": "#fff7fa",
+              "surface-tint": "#5e5e5e",
+              "on-primary-container": "#525252",
+              "primary-fixed": "#e2e2e2",
+              "inverse-surface": "#0c0e10",
+              "primary-fixed-dim": "#d4d4d4",
+              "primary-dim": "#525252",
+              "on-primary-fixed-variant": "#5b5b5b",
+              "outline": "#757c81",
+              "on-error": "#fff7f7",
+              "tertiary": "#6f576f",
+              "secondary-container": "#e4e2e5",
+              "surface-variant": "#dde3e9",
+              "on-surface": "#2d3338",
+              "surface-container-lowest": "#ffffff"
             },
-        }
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
     </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-            font-size: 1.25rem;
-        }
-
-        .glass-effect {
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
-
-        .text-balance {
-            text-wrap: balance;
-        }
-
-        .tonal-transition {
-            transition: background-color 0.3s ease;
-        }
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f9f9fb;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
     </style>
 </head>
-
-<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
-    <!-- Top Navigation (Shared Component) -->
-    <nav
-        class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] tonal-transition">
-        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-            <div class="text-xl font-bold tracking-tighter text-zinc-900">ELYSIA</div>
-            <div class="hidden md:flex gap-8 items-center">
-                <a class="font-inter tracking-tight text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
-                    href="#">Home</a>
-                <a class="font-inter tracking-tight text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
-                    href="#">Projects</a>
-                <a class="font-inter tracking-tight text-sm font-medium text-zinc-900 font-semibold border-b border-zinc-900/10 transition-colors duration-300"
-                    href="#">About</a>
-                <a class="font-inter tracking-tight text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
-                    href="#">Contact</a>
-            </div>
-            <button
-                class="bg-primary text-on-primary px-5 py-2 rounded-lg text-sm font-medium scale-102 active:scale-98 transition-transform">Get
-                in touch</button>
-        </div>
-    </nav>
-    <main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
-        <!-- Hero Section: Intentional Asymmetry -->
-        <section class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-32">
-            <div class="lg:col-span-7">
-                <span class="font-label text-xs uppercase tracking-widest text-outline mb-6 block">The Narrative</span>
-                <h1
-                    class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-zinc-900 leading-[0.9] mb-12 text-balance">
-                    Crafting digital artifacts that resonate with <span class="text-outline-variant">quiet
-                        purpose.</span>
-                </h1>
-                <div class="space-y-8 max-w-xl">
-                    <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed">
-                        I am a multi-disciplinary designer and creative technologist based in the digital ether. My work
-                        sits at the intersection of aesthetic precision and functional clarity, driven by the belief
-                        that space is as much a design tool as color or type.
+<body class="text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9fb]/70 dark:bg-[#121212]/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(45,51,56,0.04)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<span class="text-xl font-bold tracking-tighter text-[#2d3338] dark:text-[#f9f9fb]">CS Portfolio</span>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-['Inter'] tracking-tight font-medium text-sm text-[#757c81] dark:text-[#acb3b8] hover:text-[#2d3338] transition-colors" href="index.html">Home</a>
+<a class="font-['Inter'] tracking-tight font-medium text-sm text-[#757c81] dark:text-[#acb3b8] hover:text-[#2d3338] transition-colors" href="projects.html">Projects</a>
+<a class="font-['Inter'] tracking-tight font-medium text-sm text-[#757c81] dark:text-[#acb3b8] hover:text-[#2d3338] transition-colors" href="education.html">Education</a><a class="font-['Inter'] tracking-tight font-medium text-sm text-[#2d3338] dark:text-[#ffffff] border-b-2 border-[#5e5e5e] pb-1" href="about.html">About</a>
+<a class="font-['Inter'] tracking-tight font-medium text-sm text-[#757c81] dark:text-[#acb3b8] hover:text-[#2d3338] transition-colors" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg text-sm font-medium hover:scale-[1.02] transition-transform duration-200">
+                    Resume
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section: Identity -->
+<section class="max-w-7xl mx-auto px-8 mb-24 lg:mb-32">
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="w-full md:w-3/5">
+<span class="label-md uppercase tracking-widest text-outline mb-4 block font-medium text-[0.75rem]">The Narrative</span>
+<h1 class="text-[3.5rem] leading-[1.1] font-bold tracking-tighter text-on-background mb-8 -ml-1">
+                        Chaitanya. <br/>
+<span class="text-primary-dim opacity-40">Architecting Neural Intelligence.</span>
+</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-xl">
+                        Born in the vibrant city of Chandigarh and now navigating the crisp landscapes of Edmonton, I build bridgeheads between theoretical algorithms and scalable software systems.
                     </p>
-                    <p class="text-lg text-on-secondary-fixed-variant leading-relaxed">
-                        With over a decade of experience navigating the evolving landscape of human-computer
-                        interaction, I focus on building systems that don't just solve problems, but elevate the human
-                        experience through intentionality.
-                    </p>
-                </div>
-            </div>
-            <div class="lg:col-span-5 relative group">
-                <div class="aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-low">
-                    <img alt="A professional portrait in a minimalist setting"
-                        class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
-                        data-alt="Modern professional portrait with clean lighting"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJWeg1t2XQWJVsvIS1ts36TVxwnXDOpz3kIiIAuUxQc3itpU60EwPWtdYtUak0FqL-LiXBLqk6almyoAr60MD8CgMxQCy8S0KPwpZXlS8Pqo6bBMZgz80nP3R7RNWtRBzKi9OWBeAPu54gujKdSxd_bwWM8HaUL8nB1cXV3jS4a9vgYfHZFnVdRDilcxnBanVFk2-DFbtUZyvWqupW9E20MFW9wbCMwlX7ToKXHjdyVwXW9z2KJ27R6c8FlFhWg3jw8S01KU18F4E" />
-                </div>
-                <div
-                    class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-lg shadow-xl max-w-[240px] hidden md:block">
-                    <p class="font-label text-[10px] uppercase tracking-[0.2em] text-outline mb-2">Currently exploring
-                    </p>
-                    <p class="text-sm font-medium text-zinc-800">Generative aesthetics and the poetry of motion.</p>
-                </div>
-            </div>
-        </section>
-        <!-- Content Columns -->
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-32">
-            <div class="space-y-6">
-                <h3 class="font-headline text-2xl font-semibold tracking-tight">Philosophy</h3>
-                <p class="text-on-surface-variant leading-relaxed">
-                    The best designs aren't the ones that demand attention, but the ones that reward it. I embrace the
-                    "No-Line" rule, creating boundaries through light and shadow rather than rigid constraints.
-                </p>
-            </div>
-            <div class="space-y-6">
-                <h3 class="font-headline text-2xl font-semibold tracking-tight">Process</h3>
-                <p class="text-on-surface-variant leading-relaxed">
-                    I begin every project by stripping away the noise. What remains is the core intent. From there, I
-                    build with a focus on editorial hierarchy, ensuring the most important message is always clear.
-                </p>
-            </div>
-            <div class="space-y-6">
-                <h3 class="font-headline text-2xl font-semibold tracking-tight">Curation</h3>
-                <p class="text-on-surface-variant leading-relaxed">
-                    Every element on a screen must justify its existence. If it doesn't contribute to the story or the
-                    utility, it is removed. This curation is what leads to an ethereal experience.
-                </p>
-            </div>
-        </section>
-        <!-- Experience & Skills: Tonal Depth Layering -->
-        <section class="bg-surface-container-low rounded-3xl p-8 md:p-16">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
-                <div>
-                    <h2 class="font-headline text-3xl font-bold tracking-tight mb-12">Selected Experience</h2>
-                    <div class="space-y-12">
-                        <div class="flex items-start gap-6 group">
-                            <span class="font-label text-xs text-outline-variant pt-1">2021—Present</span>
-                            <div>
-                                <h4 class="text-lg font-semibold text-zinc-900">Principal Designer</h4>
-                                <p class="text-sm text-outline mb-2">Aetheric Studios</p>
-                                <p class="text-on-surface-variant text-sm max-w-md">Leading the visual identity and
-                                    product strategy for high-end boutique brands globally.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-6 group">
-                            <span class="font-label text-xs text-outline-variant pt-1">2018—2021</span>
-                            <div>
-                                <h4 class="text-lg font-semibold text-zinc-900">Senior UX Lead</h4>
-                                <p class="text-sm text-outline mb-2">Lumina Digital</p>
-                                <p class="text-on-surface-variant text-sm max-w-md">Orchestrated the transition from
-                                    legacy systems to a modern, glassmorphic design language.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2 class="font-headline text-3xl font-bold tracking-tight mb-12">Discipline &amp; Mastery</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                        <div
-                            class="p-6 bg-surface-container-lowest rounded-xl tonal-transition hover:bg-white shadow-sm">
-                            <span class="material-symbols-outlined text-primary mb-4"
-                                data-icon="auto_awesome">auto_awesome</span>
-                            <h5 class="font-semibold text-zinc-900 mb-2">Visual Direction</h5>
-                            <p class="text-xs text-on-surface-variant leading-relaxed">Building cohesive visual
-                                narratives across digital platforms.</p>
-                        </div>
-                        <div
-                            class="p-6 bg-surface-container-lowest rounded-xl tonal-transition hover:bg-white shadow-sm">
-                            <span class="material-symbols-outlined text-primary mb-4"
-                                data-icon="architecture">architecture</span>
-                            <h5 class="font-semibold text-zinc-900 mb-2">Design Systems</h5>
-                            <p class="text-xs text-on-surface-variant leading-relaxed">Scaling aesthetic principles
-                                through robust, technical frameworks.</p>
-                        </div>
-                        <div
-                            class="p-6 bg-surface-container-lowest rounded-xl tonal-transition hover:bg-white shadow-sm">
-                            <span class="material-symbols-outlined text-primary mb-4" data-icon="code">code</span>
-                            <h5 class="font-semibold text-zinc-900 mb-2">Prototyping</h5>
-                            <p class="text-xs text-on-surface-variant leading-relaxed">Bridging the gap between static
-                                design and interactive reality.</p>
-                        </div>
-                        <div
-                            class="p-6 bg-surface-container-lowest rounded-xl tonal-transition hover:bg-white shadow-sm">
-                            <span class="material-symbols-outlined text-primary mb-4"
-                                data-icon="menu_book">menu_book</span>
-                            <h5 class="font-semibold text-zinc-900 mb-2">Creative Writing</h5>
-                            <p class="text-xs text-on-surface-variant leading-relaxed">Developing voice and tone
-                                strategies for premium products.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer (Shared Component) -->
-    <footer class="w-full py-12 border-t border-zinc-100/10 bg-zinc-50">
-        <div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto">
-            <div class="font-inter text-xs tracking-widest uppercase text-zinc-400 mb-6 md:mb-0">
-                © 2024 ELYSIA. Designed for the ethereal.
-            </div>
-            <div class="flex gap-8">
-                <a class="font-inter text-xs tracking-widest uppercase text-zinc-400 hover:text-zinc-900 transition-opacity opacity-80 hover:opacity-100"
-                    href="#">Twitter</a>
-                <a class="font-inter text-xs tracking-widest uppercase text-zinc-400 hover:text-zinc-900 transition-opacity opacity-80 hover:opacity-100"
-                    href="#">LinkedIn</a>
-                <a class="font-inter text-xs tracking-widest uppercase text-zinc-400 hover:text-zinc-900 transition-opacity opacity-80 hover:opacity-100"
-                    href="#">Dribbble</a>
-            </div>
-        </div>
-    </footer>
-    <!-- Floating Contact Action (Contextual Enhancement) -->
-    <div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
-        <a class="flex items-center gap-3 px-6 py-3 bg-white/70 backdrop-blur-xl border border-white/20 rounded-full shadow-2xl hover:scale-105 transition-transform group"
-            href="#">
-            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-            <span class="text-sm font-medium text-zinc-900">Available for select projects</span>
-            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform"
-                data-icon="arrow_forward">arrow_forward</span>
-        </a>
-    </div>
-</body>
-
-</html>
+</div>
+<div class="w-full md:w-2/5 aspect-[4/5] bg-surface-container-low rounded-xl overflow-hidden relative">
+<img alt="Portrait of Chaitanya" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of Chaitanya in a minimalist setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU-WIhsRi4Rrgz8OZnIaqfPTGdNJEuhmjSk6xgLSZdYMli8z1dVoIzBTfo8dF_BBONOVTkPd34b8-rS9y-hdERF1ZExDPfa19c4X97T_xQjOUJbB5eETCnbheCk8cELNsE8XWs6haOciHINEILXk_zi22yE75LMb0-B6-1uCfAe3jp1ST-rUW0G0exJu8bI_ZgOUB8cusoTiuG-FnuZnL9aOQhpuNIEwFUladTRMEkhzpVHrSuQDQu_9gQaD8XTS8_oiZBgA46J40"/>
+<div class="absolute bottom-6 left-6 bg-surface-container-lowest/80 backdrop-blur-md px-4 py-2 rounded-lg">
+<p class="text-xs font-bold tracking-widest uppercase text-on-surface">Currently: Edmonton, AB</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Bento Grid -->
+<section class="bg-surface-container-low py-24 mb-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="label-md uppercase tracking-widest text-outline mb-2 block font-medium text-[0.75rem]">Technical Focus</span>
+<h2 class="text-3xl font-bold tracking-tight text-on-background">Systemic Interests</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Machine Learning & Neural Networks -->
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-xl shadow-[0_20px_40px_rgba(45,51,56,0.02)] flex flex-col justify-between group">
+<div>
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="neurology">neurology</span>
+<h3 class="text-2xl font-bold mb-4">Neural Networks &amp; ML</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">Exploring the frontiers of deep learning, focusing on architecture optimization and neural efficiency.</p>
+</div>
+<div class="mt-8 flex gap-3 flex-wrap">
+<span class="px-3 py-1 bg-surface-container text-xs font-medium rounded-full">PyTorch</span>
+<span class="px-3 py-1 bg-surface-container text-xs font-medium rounded-full">TensorFlow</span>
+<span class="px-3 py-1 bg-surface-container text-xs font-medium rounded-full">Computer Vision</span>
+</div>
+</div>
+<!-- Algorithms -->
+<div class="bg-primary text-on-primary p-10 rounded-xl flex flex-col justify-between hover:scale-[1.01] transition-transform duration-300">
+<div>
+<span class="material-symbols-outlined text-primary-container mb-6 text-4xl" data-icon="account_tree">account_tree</span>
+<h3 class="text-2xl font-bold mb-4">Algorithm Development</h3>
+<ul class="space-y-3 opacity-90 text-sm">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Minimax</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Negamax</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Alpha-Beta Pruning</li>
+</ul>
+</div>
+<p class="text-xs uppercase tracking-tighter mt-8 opacity-60">Game Theory Optimization</p>
+</div>
+<!-- Software Quality -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_20px_40px_rgba(45,51,56,0.02)] group">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="verified_user">verified_user</span>
+<h3 class="text-xl font-bold mb-3">Software Quality</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Dedicated to the rigor of testing and architecture patterns that ensure long-term system stability.</p>
+</div>
+<!-- Networks -->
+<div class="md:col-span-2 bg-secondary-container p-10 rounded-xl flex items-center gap-12">
+<div class="hidden lg:block w-32 h-32 rounded-full border-4 border-dashed border-on-secondary-container/20 animate-spin-slow"></div>
+<div>
+<h3 class="text-xl font-bold mb-3">Computer Networks</h3>
+<p class="text-sm text-on-secondary-container leading-relaxed max-w-lg">Deep diving into protocol stacks, distributed systems, and the underlying fabric of the global internet.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Languages & Hobbies: The Human Layer -->
+<section class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+<!-- Linguistic Proficiency -->
+<div>
+<span class="label-md uppercase tracking-widest text-outline mb-4 block font-medium text-[0.75rem]">Polyglot</span>
+<h2 class="text-4xl font-bold tracking-tight mb-12">Linguistic Proficiency</h2>
+<div class="space-y-8">
+<div>
+<div class="flex justify-between items-end mb-3">
+<span class="text-lg font-bold">English, Hindi, Punjabi, Urdu</span>
+<span class="text-xs text-outline font-medium uppercase tracking-widest">Advanced / Native</span>
+</div>
+<div class="h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary w-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-end mb-3">
+<span class="text-lg font-bold">Spanish &amp; French</span>
+<span class="text-xs text-outline font-medium uppercase tracking-widest">Beginner</span>
+</div>
+<div class="h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[25%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Hobbies -->
+<div class="bg-surface-container-high p-12 rounded-2xl relative overflow-hidden">
+<div class="relative z-10">
+<span class="label-md uppercase tracking-widest text-on-surface-variant mb-4 block font-medium text-[0.75rem]">Beyond the Terminal</span>
+<h2 class="text-4xl font-bold tracking-tight mb-8">Interests &amp; Pulse</h2>
+<div class="grid grid-cols-2 gap-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="fitness_center">fitness_center</span>
+<div>
+<h4 class="font-bold text-sm">Fitness</h4>
+<p class="text-xs text-on-surface-variant">Functional strength &amp; movement.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="sports_esports">sports_esports</span>
+<div>
+<h4 class="font-bold text-sm">Video Games</h4>
+<p class="text-xs text-on-surface-variant">Strategic immersion.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="movie">movie</span>
+<div>
+<h4 class="font-bold text-sm">Horror/Mystery</h4>
+<p class="text-xs text-on-surface-variant">The psychology of tension.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="sports_mma">sports_mma</span>
+<div>
+<h4 class="font-bold text-sm">UFC</h4>
+<p class="text-xs text-on-surface-variant">The ultimate game of chess.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative background icon -->
+<span class="material-symbols-outlined absolute -bottom-10 -right-10 text-[12rem] text-surface-dim/40 select-none" data-icon="fingerprint">fingerprint</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f9f9fb] dark:bg-[#0a0a0a] w-full border-t border-[#acb3b8]/15">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto">
+<p class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-[#5e5e5e] dark:text-[#acb3b8]">
+                © 2024 Editorial Minimalist. All rights reserved.
+            </p>
+<div class="flex gap-8 mt-6 md:mt-0">
+<a class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-[#757c81] dark:text-[#525252] hover:text-[#5e5e5e] transition-colors" href="#">GitHub</a>
+<a class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-[#757c81] dark:text-[#525252] hover:text-[#5e5e5e] transition-colors" href="#">LinkedIn</a>
+<a class="font-['Inter'] text-[0.75rem] uppercase tracking-widest text-[#757c81] dark:text-[#525252] hover:text-[#5e5e5e] transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+</body></html>
